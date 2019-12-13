@@ -20,8 +20,8 @@ function ganhador(){
         (espacosOcupados[2]=="1" && espacosOcupados[5]=="1" && espacosOcupados[8]=="1")){
             var texto = "Vencedor - Haley";
             document.getElementById("titulo").innerHTML = texto;
-            document.getElementById("imgJogador1").src = "C:/Users/João Pedro/Documents/JavaScript/Exemplos JS/assets/Haley_Happy.png"
-            document.getElementById("imgJogador2").src = "C:/Users/João Pedro/Documents/JavaScript/Exemplos JS/assets/Abigail_Surprised.png"
+            document.getElementById("imgJogador1").src = "assets/Haley_Happy.png"
+            document.getElementById("imgJogador2").src = "assets/Abigail_Surprised.png"
             return false;
     }else
     if((espacosOcupados[0]=="2" && espacosOcupados[1]=="2" && espacosOcupados[2]=="2") || 
