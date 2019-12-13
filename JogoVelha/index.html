@@ -15,16 +15,27 @@
 
 <body onload="sorteio();">
 	<div class="container">
-		<div class="tabuleiro" >
-			<div onmouseover="mudaCor(1, id);" onmouseout="mudaCor(0, id);" onclick="adiciona(id)" id="c1"></div>
-            <div onmouseover="mudaCor(1, id);" onmouseout="mudaCor(0, id);" onclick="adiciona(id)" id="c2"></div>
-            <div onmouseover="mudaCor(1, id);" onmouseout="mudaCor(0, id);" onclick="adiciona(id)" id="c3"></div>
-            <div onmouseover="mudaCor(1, id);" onmouseout="mudaCor(0, id);" onclick="adiciona(id)" id="c4"></div>
-            <div onmouseover="mudaCor(1, id);" onmouseout="mudaCor(0, id);" onclick="adiciona(id)" id="c5"></div>
-            <div onmouseover="mudaCor(1, id);" onmouseout="mudaCor(0, id);" onclick="adiciona(id)" id="c6"></div>
-            <div onmouseover="mudaCor(1, id);" onmouseout="mudaCor(0, id);" onclick="adiciona(id)" id="c7"></div>
-            <div onmouseover="mudaCor(1, id);" onmouseout="mudaCor(0, id);" onclick="adiciona(id)" id="c8"></div>
-            <div onmouseover="mudaCor(1, id);" onmouseout="mudaCor(0, id);" onclick="adiciona(id)" id="c9"></div>
-		</div>
+        <h1 id="titulo"></h1>
+        <div id="main">
+            <div id="jogador1">
+                <img id="imgJogador1" src="assets/Haley.png"></img>
+                <div id="nome">HALEY</div>
+            </div>
+            <div class="tabuleiro" >
+                <div onmouseover="mudaCor(1, id);" onmouseout="mudaCor(0, id);" onclick="adiciona(id)" id="c1"></div>
+                <div onmouseover="mudaCor(1, id);" onmouseout="mudaCor(0, id);" onclick="adiciona(id)" id="c2"></div>
+                <div onmouseover="mudaCor(1, id);" onmouseout="mudaCor(0, id);" onclick="adiciona(id)" id="c3"></div>
+                <div onmouseover="mudaCor(1, id);" onmouseout="mudaCor(0, id);" onclick="adiciona(id)" id="c4"></div>
+                <div onmouseover="mudaCor(1, id);" onmouseout="mudaCor(0, id);" onclick="adiciona(id)" id="c5"></div>
+                <div onmouseover="mudaCor(1, id);" onmouseout="mudaCor(0, id);" onclick="adiciona(id)" id="c6"></div>
+                <div onmouseover="mudaCor(1, id);" onmouseout="mudaCor(0, id);" onclick="adiciona(id)" id="c7"></div>
+                <div onmouseover="mudaCor(1, id);" onmouseout="mudaCor(0, id);" onclick="adiciona(id)" id="c8"></div>
+                <div onmouseover="mudaCor(1, id);" onmouseout="mudaCor(0, id);" onclick="adiciona(id)" id="c9"></div>
+            </div>
+            <div id="jogador2">
+                <img id="imgJogador2" src="assets/Abigail.png"></img>
+                <div id="nome">ABIGAIL</div>
+            </div>
+        </div>
 	</div>
 </body>

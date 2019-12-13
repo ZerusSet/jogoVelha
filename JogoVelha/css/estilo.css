@@ -1,12 +1,24 @@
+@font-face {
+    font-family: 'stardewFont';
+    src: url('../fonts/burnstown_dam.woff2') format('woff2'),
+         url('../fonts/burnstown_dam.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body, html{
 	width: 100%;
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	font-family: 'stardewFont';
+	background-image: url("../assets/fundo.jpg");
 }
 
 .container{
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
@@ -25,8 +37,52 @@ body, html{
 }
 
 .tabuleiro div{
-    border: 1px solid black;
+	border: 1px solid rgba(181,108,40,1);
+	border-radius: 6px;
     display: flex;
     justify-content: center;
-    align-items: center;
+	align-items: center;
+	background-image: url("../assets/plantacao.png");
+}
+
+h1{
+	color: rgba(239,172,39,1);
+	background: rgba(0,0,0,0.5);
+	border: 4px solid rgba(239,172,39,1);
+	border-radius: 8px;
+	padding: 0 5px 0 5px;
+	font-size: 42px;
+	text-align: center;
+}
+
+#main{
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding-bottom: 1%;
+}
+
+#jogador1, #jogador2{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	border: 8px solid rgb(104, 72, 36);
+	border-radius: 10px;
+	text-align: center;
+}
+
+#jogador1 img, #jogador2 img{
+	border-bottom: 8px solid rgb(104, 72, 36);
+	background: rgba(239,172,39,0.6);
+}
+
+#nome{
+	background: rgba(239,172,39,1);
+	font-size: 35px;
+	text-shadow: 4px 4px 6px rgba(0,0,0,0.2);
+	border-radius: 2px;
+	font-weight: 600;
+	color: rgb(104, 72, 36);
 }
