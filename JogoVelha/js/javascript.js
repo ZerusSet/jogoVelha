@@ -34,8 +34,8 @@ function ganhador(){
         (espacosOcupados[2]=="2" && espacosOcupados[5]=="2" && espacosOcupados[8]=="2") ){
             var texto = "Vencedor - Abigail";
             document.getElementById("titulo").innerHTML = texto;
-            document.getElementById("imgJogador2").src = "C:/Users/João Pedro/Documents/JavaScript/Exemplos JS/assets/Abigail_Happy.png"
-            document.getElementById("imgJogador1").src = "C:/Users/João Pedro/Documents/JavaScript/Exemplos JS/assets/Haley_Dirty_Surprised.png"
+            document.getElementById("imgJogador2").src = "assets/Abigail_Happy.png"
+            document.getElementById("imgJogador1").src = "assets/Haley_Dirty_Surprised.png"
             return false;
     }else return true;
 }
@@ -61,7 +61,7 @@ function maquina(){
         if(player==1){
             if(document.getElementById(id).childElementCount<1){
                 var b = document.createElement("img");
-                b.src= "C:/Users/João Pedro/Documents/JavaScript/Exemplos JS/assets/Pumpkin.png";
+                b.src= "assets/Pumpkin.png";
                 document.getElementById(id).appendChild(b);
                 var classe = document.getElementsByTagName("i");
                 espacosOcupados[x] = "2";
@@ -73,7 +73,7 @@ function maquina(){
         } else {
             if(document.getElementById(id).childElementCount<1){
                 var b = document.createElement("img");
-                b.src= "C:/Users/João Pedro/Documents/JavaScript/Exemplos JS/assets/Melon.png";
+                b.src= "assets/Melon.png";
                 
                 document.getElementById(id).appendChild(b);
                 var classe = document.getElementsByTagName("i");
@@ -101,7 +101,7 @@ function adiciona(id){
         if(player==1){
             if(document.getElementById(id).childElementCount<1){
                 var b = document.createElement("img");
-                b.src= "C:/Users/João Pedro/Documents/JavaScript/Exemplos JS/assets/Melon.png";
+                b.src= "assets/Melon.png";
                 document.getElementById(id).appendChild(b);
                 cont++;
                 var variavel = document.getElementById(id).id.replace('c','');
@@ -113,7 +113,7 @@ function adiciona(id){
         if(player==2){
             if(document.getElementById(id).childElementCount<1){
                 var b = document.createElement("img");
-                b.src= "C:/Users/João Pedro/Documents/JavaScript/Exemplos JS/assets/Pumpkin.png";
+                b.src= "assets/Pumpkin.png";
                 document.getElementById(id).appendChild(b);
                 
                 cont++;
